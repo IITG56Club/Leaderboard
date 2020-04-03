@@ -1,0 +1,3 @@
+This documents the steps for generating data from the log files
+1. Use wget to get the raw log files
+wget "www.liveplayok.com/WebForm56Score.aspx?plaingcardsTable_id=FS15"
