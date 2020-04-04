@@ -1,3 +1,13 @@
-This documents the steps for generating data from the log files
-1. Use wget to get the raw log files
-wget "www.liveplayok.com/WebForm56Score.aspx?plaingcardsTable_id=FS15"
+1. Usage
+      ./logging.sh tablenumber
+2. Synopsis
+      The gamelog of the table given by tablenumber is extracted an processed to get a single line summary of the games played.
+      Useful for extracting game related informations from www.liveplayok.com The downloaded files are stored in a user specified
+      directory. These files are tar zipped and stored after the relevant informations are extracted.
+3. Dependencies
+      Standard linux tools + bidstring + shortnames
+      
+      bidstring can be obtained by running
+      g++ -o bidstring bidstring.cpp
+      shortnames
+      g++ -o shortnames shortnames.cpp
